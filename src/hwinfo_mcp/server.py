@@ -1,9 +1,9 @@
 """HWiNFO MCP server.
 
-Runs on the Windows PC where HWiNFO is installed and exposes its data to Claude
-over stdio. Register it with, e.g.:
+Runs on the Windows PC where HWiNFO is installed and exposes its data to MCP
+clients over stdio. For Claude Code, register it with, e.g.:
 
-    claude mcp add hwinfo -- hwinfo-mcp
+    claude mcp add hwinfo-mcp -- hwinfo-mcp
 """
 
 from __future__ import annotations
