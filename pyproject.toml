@@ -4,8 +4,8 @@ build-backend = "hatchling.build"
 
 [project]
 name = "hwinfo-mcp"
-version = "0.1.0"
-description = "MCP server that exposes HWiNFO data (memory timings, full hardware report, and live sensors) on a Windows PC to Claude."
+version = "0.1.1"
+description = "MCP server exposing HWiNFO reports and live sensor data to MCP clients on Windows."
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -13,6 +13,10 @@ authors = [{ name = "David Morgenstern" }]
 dependencies = [
     "mcp>=1.2.0,<2",
 ]
+
+[project.urls]
+Homepage = "https://github.com/acabellocano/hwinfo-mcp"
+Issues = "https://github.com/acabellocano/hwinfo-mcp/issues"
 
 [project.optional-dependencies]
 # Only needed if you want to build a standalone single-file .exe to copy around.
